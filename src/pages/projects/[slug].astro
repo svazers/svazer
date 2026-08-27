@@ -20,33 +20,6 @@ try {
 // Override with static data for bot portfolio
 allProjects = [
   {
-    title: "Takina MD",
-    description: "A comprehensive WhatsApp Multi-Device bot with 508+ plugins covering AI chat, media downloading, RPG games, and group management. Powered by Baileys & Node.js.",
-    slug: { current: "takina-md" },
-    projectUrl: "https://chat.whatsapp.com/Jmol4sl3VGA6f5gjmExkWK",
-    themeHex: "#1a0f30",
-    device: "iphone",
-    homepageImage: "https://cdn.alfisy.my.id/file/786163.jpg"
-  },
-  {
-    title: "Sewa Bot System",
-    description: "An automated rental bot system allowing users to rent bot instances. Features include auto-expiration, payment integration, and isolated databases.",
-    slug: { current: "sewa-bot" },
-    projectUrl: "https://takina.svazer.eu.cc",
-    themeHex: "#121f1a",
-    device: "browser",
-    homepageImage: "https://cdn.alfisy.my.id/file/631341.jpg"
-  },
-  {
-    title: "Jadibot Engine",
-    description: "A cloning engine that enables users to connect their own WhatsApp numbers to the bot. Features independent sessions with a shared persistent SQLite database.",
-    slug: { current: "jadibot-engine" },
-    projectUrl: "https://jadibot-nih-bang.vercel.app",
-    themeHex: "#300a0a",
-    device: "browser",
-    homepageImage: "https://cdn.alfisy.my.id/file/283543.jpg"
-  },
-  {
     title: "Alsya API",
     description: "A robust REST API service providing reliable endpoints for bots and web applications. Built for high performance and maximum uptime.",
     slug: { current: "alsya-api" },
@@ -104,14 +77,14 @@ allProjects = [
     title: "ZerAnime",
     description: "Zeranime is top of free streaming website, where to watch anime online free without registration required. With a big database and great features, we're confident. Zeranime is the best free anime online website in the space that you can't simply miss!",
     slug: { current: "zeranime" },
-    projectUrl: "https://zeranime.svazer.eu.cc",
+    projectUrl: "https://zeranime.up.railway.app",
     themeHex: "#2a0a30",
     device: "browser",
     homepageImage: "https://cdn.alfisy.my.id/file/634418.jpg"
   },
   {
     title: "Zermovie",
-    description: "Zermovie is a web-based movie streaming platform that allows users to watch a wide variety of movie content for free. The interface of this site is designed to be simple with easy navigation to search for certain categories or film titles. Users can play videos directly without having to go through a complicated account registration process. Apart from that, this site provides a quick search feature as well as genre categories to help users find the shows they want. Overall, this is a handy entertainment service for those who want to watch movies online with instant access.",
+    description: "Zermovie is a web-based movie streaming platform that allows users to watch a wide variety of movie content for free.",
     slug: { current: "zermovie" },
     projectUrl: "https://zermovie.svazer.eu.cc",
     themeHex: "#2a0a30",
@@ -128,13 +101,7 @@ if (project) {
   project.status = "Active";
   project.pageHeroImage = project.homepageImage;
   
-  if (project.slug.current === 'takina-md') {
-    project.bodyRaw = "<p>Takina MD is an advanced WhatsApp Multi-Device bot architected for ultimate scalability and high performance. Built on top of the <strong>Baileys</strong> framework and <strong>Node.js</strong>, it boasts a modular architecture supporting over 500+ interactive plugins.</p><br/><p>Core features include seamless integration with 43+ AI models, an immersive RPG gaming system, automated group management, and versatile utility tools. Data is securely managed using SQLite with WAL mode, ensuring stability and blazing-fast response times even under heavy traffic.</p>";
-  } else if (project.slug.current === 'sewa-bot') {
-    project.bodyRaw = "<p>The Sewa Bot System is an automated WhatsApp bot rental platform that empowers users to easily deploy and rent their own bot instances independently.</p><br/><p>The system is engineered with auto-expiration tracking, seamless payment gateway integration, and isolated database management for each tenant. This architecture guarantees data privacy and provides a completely hands-free operational experience for the administrator.</p>";
-  } else if (project.slug.current === 'jadibot-engine') {
-    project.bodyRaw = "<p>Jadibot Engine is an innovative session-cloning system that allows users to link their personal WhatsApp numbers to the bot ecosystem, temporarily transforming their accounts into functioning bots.</p><br/><p>Every cloned session operates independently while intelligently sharing resources from a centralized SQLite database. This feature is perfect for users who want to experience owning a bot without the hassle of server configuration, hosting, or technical dependencies.</p>";
-  } else if (project.slug.current === 'alsya-api') {
+  if (project.slug.current === 'alsya-api') {
     project.bodyRaw = "<p>Alsya API is a comprehensive REST API service specifically designed to power WhatsApp bot ecosystems and modern web applications. Backed by robust infrastructure, it provides essential endpoints ranging from data utilities to intensive media processing.</p><br/><p>The primary focus of this service is delivering ultra-low latency responses with rock-solid uptime guarantees, enabling developers to build sophisticated features without the burden of managing complex backend systems.</p>";
   } else if (project.slug.current === 'svazer-cdn') {
     project.bodyRaw = "<p>Svazer CDN is a lightning-fast Content Delivery Network and file management platform engineered for speed and efficiency. It serves as the ideal hosting solution for images, documents, and other media assets generated by the bots.</p><br/><p>The system provides a frictionless uploading experience with a user-friendly interface, ensuring your media assets are instantly accessible globally without straining the primary bot servers.</p>";
