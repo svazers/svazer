@@ -92,13 +92,13 @@ allProjects = [
     homepageImage: "https://cdn.alfisy.my.id/file/121729.jpg"
   },
   {
-    title: "Alfixd Image Tools",
-    description: "An AI-powered image editing studio featuring one-click Image Upscaling, Automatic Background Removal, and Creative AI Prompt Editing.",
-    slug: { current: "alfixd-image-tools" },
-    projectUrl: "https://img-tool.alfisy.my.id",
+    title: "ZerDonghua",
+    description: "The most complete Donghua (Chinese anime) 3D and 2D Indonesian subtitle streaming portal platform. Fastest updates every day with HD video quality & multi-server player.",
+    slug: { current: "zerdonghua" },
+    projectUrl: "https://zerdonghua.svazer.eu.cc",
     themeHex: "#0e221c",
     device: "browser",
-    homepageImage: "https://cdn.alfisy.my.id/file/629167.jpg"
+    homepageImage: "https://cdn.alfisy.my.id/file/926793.jpg"
   },
   {
     title: "ZerAnime",
@@ -108,6 +108,15 @@ allProjects = [
     themeHex: "#2a0a30",
     device: "browser",
     homepageImage: "https://cdn.alfisy.my.id/file/634418.jpg"
+  },
+  {
+    title: "Zermovie",
+    description: "Zermovie is a web-based movie streaming platform that allows users to watch a wide variety of movie content for free. The interface of this site is designed to be simple with easy navigation to search for certain categories or film titles. Users can play videos directly without having to go through a complicated account registration process. Apart from that, this site provides a quick search feature as well as genre categories to help users find the shows they want. Overall, this is a handy entertainment service for those who want to watch movies online with instant access.",
+    slug: { current: "zermovie" },
+    projectUrl: "https://zermovie.svazer.eu.cc",
+    themeHex: "#2a0a30",
+    device: "browser",
+    homepageImage: "https://cdn.alfisy.my.id/file/855740.jpg"
   }
 ];
 
@@ -135,10 +144,12 @@ if (project) {
     project.bodyRaw = "<p>Axd Downloader is an <em>all-in-one</em> utility platform that streamlines the process of downloading digital assets across various social media networks. It is the ultimate practical solution for archiving your favorite online content.</p><br/><p>Powered by a robust backend system, the application rapidly processes and securely downloads videos, images, and audio in multiple resolutions without any frustrating limitations or paywalls.</p>";
   } else if (project.slug.current === 'axd-player') {
     project.bodyRaw = "<p>AXD Player is a modern web-based music application that delivers a premium audio streaming experience directly from your browser, completely eliminating the need for third-party software installations.</p><br/><p>Users can effortlessly search the massive YouTube directory, play tracks instantly via an elegant player interface, and download high-quality MP3 files to enjoy their favorite music offline.</p>";
-  } else if (project.slug.current === 'alfixd-image-tools') {
-    project.bodyRaw = "<p>Alfixd Image Tools is a comprehensive visual editing studio powered by Artificial Intelligence, designed to dramatically accelerate your creative workflow.</p><br/><p>The platform offers state-of-the-art features such as <strong>Image Upscaling</strong> to enhance resolution without losing quality, highly accurate automatic <strong>Background Removal</strong>, and <strong>AI Prompt Editing</strong>, which allows you to transform the style and composition of your images using simple, creative text commands.</p>";
+  } else if (project.slug.current === 'zerdonghua') {
+    project.bodyRaw = "<p>The most complete Donghua (Chinese anime) 3D and 2D Indonesian subtitle streaming portal platform. Fastest updates every day with HD video quality & multi-server player.</p>";
   } else if (project.slug.current === 'zeranime') {
     project.bodyRaw = "<p>ZerAnime is a dedicated streaming platform offering a vast collection of anime with Indonesian subtitles, designed to provide a seamless viewing experience for anime enthusiasts.</p><br/><p>The platform features rapid updates for the <strong>Latest Episodes</strong>, a comprehensive <strong>Schedule</strong> to track ongoing series, and a wide variety of categorizations across multiple <strong>Genres</strong> such as Action, Romance, Isekai, and Fantasy. Users can easily discover trending shows in the Spotlight section and curate their own watchlists using the built-in Favorites feature.</p>";
+  } else if (project.slug.current === 'zermovie') {
+    project.bodyRaw = "<p>Zermovie is a web-based movie streaming platform that allows users to watch a wide variety of movie content for free. The interface of this site is designed to be simple with easy navigation to search for certain categories or film titles. Users can play videos directly without having to go through a complicated account registration process. Apart from that, this site provides a quick search feature as well as genre categories to help users find the shows they want. Overall, this is a handy entertainment service for those who want to watch movies online with instant access.</p>";
   }
 }
 
